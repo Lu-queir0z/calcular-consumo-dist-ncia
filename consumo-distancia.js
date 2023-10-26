@@ -1,15 +1,9 @@
 let tempo;
 let velocidade;
-let distancia;
+let distanciapercorrida;
 let consumo;
 let resultado01;
 let resultado02;
-
-function calcular(){
-
-    document.querySelector('')
-
-}
 
 function distancia(){
     //entrada de tempo
@@ -27,7 +21,20 @@ function distancia(){
     //entrada de distancia
         velocidade = parseInt(document.querySelector('#velocidade').value);
     //processamento 
-        resultado = distancia /12;
+        resultado = distanciapercorrida /12;
     //saida
         document.querySelector('#resultado-consumo').innerHTML = resultado02;
     }
+
+function calcular(){
+
+    resultado = tempo * velocidade;
+    document.querySelector('#resultado-ditancia').innerHTML = resultado01;
+    distancia();
+
+    resultado = distanciapercorrida /12;
+    document.querySelector('#resultado-consumo').innerHTML = resultado02;
+    consumo();
+
+}
+    
